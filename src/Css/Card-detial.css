@@ -13,6 +13,8 @@
   justify-content: space-between;
   gap: 200px;
   height: 100%;
+  position: absolute;
+  top: 10%;
 }
 
 .img-card,
@@ -64,6 +66,7 @@
   gap: 2rem;
   align-items: center;
   margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
 .btn-share {
@@ -215,4 +218,33 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 1264px) {
+  .img-padding {
+    flex-wrap: wrap;
+    padding: 0rem 2rem;
+  }
+
+  .desciption,
+  .img-Genres-content {
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  .img-rating {
+    flex-wrap: wrap;
+  }
+
+  .img-card {
+    display: none;
+  }
+  .img {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .img-title {
+    font-size: x-large;
+  }
 }

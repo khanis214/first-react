@@ -14,13 +14,13 @@ import Fetch from "./Components/fetching";
 // import Card from "./Components/Card-detial";
 import SeeAllDetials from "./Components/SeeAllDeaile";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <SeeAllDetials>
       <Example>
-        <BrowserRouter basename="/first-react">
+        <HashRouter>
           <Navbar />
           <Routes>
             <Route
@@ -43,7 +43,7 @@ function App() {
             <Route path="/example" element={<Fetch />}></Route>
             {/* <Route path="/donkey/:name" element={<Card />}></Route> */}
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </Example>
     </SeeAllDetials>
   );
