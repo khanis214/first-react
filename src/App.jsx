@@ -24,7 +24,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route
-              path="/"
+              path="first-react/"
               element={
                 <>
                   <Hero />
