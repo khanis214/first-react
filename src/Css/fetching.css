@@ -1,0 +1,48 @@
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  overflow: visible;
+}
+
+.div-card {
+  z-index: 1;
+  flex: 0 0 180px;
+  transform: scale(1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.high {
+  position: relative;
+}
+
+.div-card:hover {
+  transform: scale(1.08);
+  z-index: 999;
+  box-shadow: 0 12px 32px rgb(0 0 0 / 40%);
+  position: absolute;
+  width: 20%;
+}
+
+.img-div,
+.img {
+  width: 100%;
+}
+
+.img {
+  display: block;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+.description {
+  display: none;
+  padding: 12px;
+  color: white;
+}
+
+.div-card:hover .description {
+  display: block;
+}

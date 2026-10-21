@@ -1,0 +1,213 @@
+.genres-cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+  height: fit-content;
+  padding: 0 2rem;
+  /* Enable horizontal scrolling */
+  overflow-x: auto;
+  overflow-y: hidden; /* Recommended: prevents tiny vertical shifts */
+
+  /* 1. Standard Modern Browsers (Firefox, Chrome 121+, Edge 121+) */
+  scrollbar-width: thin;
+  /* Syntax: [Thumb color (green)] [Track color (transparent or gray)] */
+  scrollbar-color: green transparent;
+}
+
+/* 2. Webkit Engine Fallback (Chrome, Safari, Edge, iOS, Android) */
+.genres-cards::-webkit-scrollbar {
+  height: 6px; /* Controls the height of a HORIZONTAL scrollbar */
+}
+
+.genres-cards::-webkit-scrollbar-track {
+  background: transparent; /* Makes the track background invisible */
+}
+
+.genres-cards::-webkit-scrollbar-thumb {
+  background-color: green; /* The draggable scrollbar element */
+  border-radius: 10px; /* Gives it smooth, rounded corners */
+}
+
+.genres-cards::-webkit-scrollbar-thumb:hover {
+  background-color: darkgreen; /* Darkens the green when hovered */
+}
+
+.genres-card {
+  padding: 0.5rem 1rem;
+  border: gray 1px solid;
+  border-radius: 20px;
+  font-size: smaller;
+  color: white;
+  text-decoration: none;
+}
+
+.genres-card:hover {
+  background: rgba(255, 255, 255, 0.26);
+  cursor: pointer;
+}
+
+.geners-id {
+  display: none;
+}
+.div {
+  display: block;
+  z-index: 99999;
+}
+
+.choose-genres-relative {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.seeAll-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2rem;
+  position: absolute;
+}
+
+.genres-title {
+  padding: 0 2rem;
+}
+
+.noti-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.noti-loading > p {
+  font-size: 10px;
+}
+
+.div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.seeAll-card {
+  position: relative;
+  border-radius: 20px;
+}
+
+.seeAll-card,
+.seeAll-cards-div-img,
+.seeAll-cards-img {
+  aspect-ratio: 2/3;
+  width: 300px;
+}
+
+.seeAll-card-title,
+.for-demo {
+  position: absolute;
+  z-index: 99;
+}
+
+.for-demo {
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.seeAll-card-desc {
+  bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+
+.seeAll-card-title {
+  top: 10px;
+  left: 10px;
+}
+
+.seeAll-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(black, transparent, black);
+}
+
+.button-seeMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.seeAll-card-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10px;
+}
+
+/* .hover-card {
+  transition: 0.5s ease-in;
+}
+
+.hover-card:hover {
+  width: 500px;
+  height: fit-content;
+  background: red;
+  z-index: 9999999999;
+} */
+
+.hover-card {
+  /* position: relative; */
+  flex-shrink: 0;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+  transform-origin: center;
+}
+
+.hover-card:hover {
+  transform: scale(1.08);
+  z-index: 10;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.seeAll-cards-div-img,
+.seeAll-card-overlay,
+.seeAll-cards-img {
+  border-radius: 20px;
+}
+
+.button-box {
+  width: 100%;
+  display: none;
+  padding: 0.3rem;
+  border-radius: 10px;
+  outline: 0;
+  transition: 0.2s ease-in;
+  box-sizing: border-box;
+  background: #c1fa3b;
+  border: 0;
+  color: black;
+}
+
+.seeAll-card:hover .button-box {
+  display: block;
+}
+
+.seeAll-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 50px #c1fa3b69;
+}

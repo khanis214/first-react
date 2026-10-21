@@ -1,0 +1,121 @@
+.Hero-Banner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url(../assets/Cinematic Streaming Night Collage.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay-left {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(80deg, black 25%, transparent);
+}
+
+.overlay-bottom {
+  position: absolute;
+  /* inset: 0; */
+  bottom: 0;
+  top: 50%;
+  right: 0;
+  left: 0;
+
+  background: linear-gradient(360deg, black, transparent);
+}
+
+.Hero-items {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.glowing-box {
+  width: 10px;
+  height: 40vh;
+  background: linear-gradient(transparent, #c1fa3b, #08bd85, transparent);
+}
+
+.Hero-Header {
+  font-size: 60px;
+}
+
+.Hero-items-text {
+  max-width: 800px;
+}
+
+.Hero-desc {
+  font-size: smaller;
+  color: rgb(173, 171, 171);
+}
+
+.Hero-buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.Hero-buttons button {
+  padding: 1rem 2.5rem;
+  border-radius: 10px;
+}
+
+.button-active {
+  font-size: small;
+  border: none;
+  background: var(--primary--green);
+  color: var(--primary--black);
+}
+
+.button-unactive {
+  border: none !important;
+}
+
+.Hero-ad {
+  position: absolute;
+  color: white;
+  bottom: 0;
+  right: 0;
+  min-width: 300px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding-right: 2rem;
+}
+
+.Hero-ad-number {
+  font-size: 70px;
+  color: transparent;
+  -webkit-text-stroke-color: #c1fa3b;
+  -webkit-text-stroke-width: 1px;
+  font-weight: lighter;
+  padding-bottom: 10px;
+}
+
+.Hero-ad-desc {
+  color: rgba(128, 128, 128, 0.438);
+}
+
+@media (max-width: 1000px) {
+  .Hero-Header {
+    font-size: 40px;
+  }
+
+  .btn,
+  .button-unactive,
+  .button-active {
+    transform: scale(0.8) translateX(-15px);
+  }
+
+  .Hero-items {
+    gap: 0.5rem;
+  }
+
+  .Hero-buttons {
+    gap: 0rem;
+  }
+}

@@ -1,0 +1,119 @@
+.buage {
+  font-size: 10px;
+  color: #c1fa3b;
+  padding: 10px;
+  border: 1px solid #c1fa3b;
+  width: fit-content;
+  border-radius: 20px;
+}
+
+.buage-box {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.catagory-h2 {
+  font-size: 50px;
+}
+
+.catagory-header {
+  align-items: center;
+  text-align: center;
+}
+
+.catagory {
+  margin-top: 50px;
+}
+
+.catagory-box {
+  width: 300px;
+  height: 400px;
+  /* background: gray; */
+  background-image: url(../assets/Explosive Tactical Action Collage.png);
+  transition: 0.5s;
+  text-align: center;
+  padding-top: 1rem;
+}
+.catagory-box {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.catagory-title {
+  position: relative;
+  z-index: 9999;
+}
+
+/* .boxes div { */
+/* width: 300px; */
+/* height: 400px; */
+/* background: gray; */
+/* transition: 0.5s; */
+/* text-align: center; */
+/* padding-top: 1rem; */
+/* } */
+/* .boxes div { */
+/* background-image: url(../assets/pexels-vovaflame-11945638.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; */
+/* } */
+
+.catagory-overlay {
+  position: absolute;
+  background: linear-gradient(black, transparent);
+  inset: 0;
+}
+
+.boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  margin-top: 100px;
+}
+
+.boxes div:hover {
+  width: 500px;
+}
+
+.catagory-box:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.catagory-box:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.catagory-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.catagory-link {
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 1500px) {
+  .boxes div:hover {
+    width: 300px;
+    transform: scale(1.05);
+  }
+
+  .boxes div {
+    width: 300px;
+  }
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}

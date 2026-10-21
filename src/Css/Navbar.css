@@ -1,0 +1,182 @@
+:root {
+  --primary--green: #c1fa3b;
+  --primary--black: #030e08;
+  --primary--gray: #faf6f7;
+  --green: #08bd85;
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+/* 
+* {
+  font-family: "Orbitron", sans-serif;
+} */
+
+/* @font-face {
+  font-family: "Game Of Squids";
+  src: url("../../fonts/Game\ Of\ Squids.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+body,
+button {
+  font-family: "Game Of Squids", sans-serif;
+  background: black;
+  color: var(--primary--gray);
+}
+
+.Nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  background-color: black;
+}
+
+.NavbarItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  font-size: small;
+  font-weight: lighter;
+}
+
+.Navbar-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  border-radius: 10px;
+}
+
+.btn-green {
+  font-size: small;
+  border: none;
+  background: var(--primary--green);
+  color: var(--primary--black);
+}
+
+.Nav {
+  padding: 1rem 2rem;
+  padding-bottom: 10px;
+}
+
+.NavbarItems li {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.active {
+  background: var(--primary--green);
+  padding: 10px;
+  color: var(--primary--black);
+  border-radius: 10px;
+}
+
+.hambargure {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hambargure span {
+  width: 25px;
+  height: 3px;
+  background: var(--primary--green);
+  border-radius: 10px;
+  transition: 0.2s ease-in;
+}
+.Navbar.open span:nth-child(1) {
+  transform: translateY(11px) rotate(45deg);
+}
+.Navbar.open span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+.Navbar.open span:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+.Navbar-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+.Navbar.open .navbar-mobile {
+  display: block;
+}
+
+.Navbar-mobile-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.Navbar-mobile-list li {
+  margin-bottom: 1rem;
+  padding-bottom: 5px;
+  color: gray;
+  transition: 0.1s ease-in;
+  position: relative;
+  cursor: pointer;
+}
+
+.Navbar-mobile-list li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary--green);
+  width: 0px;
+  height: 2px;
+  transition: 0.5s ease-in;
+}
+
+.Navbar-mobile-list li:hover::after {
+  width: 100%;
+}
+
+.btn-mobile {
+  width: 100%;
+}
+
+.link-design {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-mobile.navbar-mobile-closed {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .NavbarItems,
+  .btn-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 1001px) {
+  .navbar-mobile,
+  .hambargure {
+    display: none !important;
+  }
+}

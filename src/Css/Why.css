@@ -1,0 +1,71 @@
+.Why {
+  border-bottom: 1px solid #c1fa3b;
+  padding: 0 2rem;
+}
+.Why-Home {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 100px;
+  gap: 3rem;
+}
+.Why-list-box {
+  display: flex;
+  gap: 1rem;
+}
+
+.Why-box-half {
+  max-width: 1000px;
+}
+
+.Why-list-box {
+  margin-bottom: 3rem;
+}
+
+.Why-list-header {
+  font-size: medium;
+}
+
+.Why-list-desc {
+  font-size: 10px;
+}
+
+.Why-logo {
+  width: 60px;
+  height: 60px;
+  background: #c1fa3b;
+  border-radius: 20px;
+}
+
+.Why-list-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.Why-list-box {
+  display: flex;
+  align-items: normal;
+}
+
+.Why-title {
+  font-size: 50px;
+}
+
+.Why-buttons {
+  margin-top: 1rem;
+}
+
+.why-buage {
+  margin-top: 20px;
+}
+
+@media (max-width: 1000px) {
+  .Why-Home {
+    justify-content: left;
+    gap: 1rem;
+  }
+  .Why-title {
+    font-size: 30px;
+  }
+}

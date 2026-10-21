@@ -1,0 +1,58 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card-img {
+  position: relative;
+}
+
+.card-title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.card-item {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  visibility: hidden;
+  transition: 0.1s ease-in;
+  z-index: 9999;
+}
+
+.card-img:hover .card-item,
+.card-img:hover .card-overlay-catagories {
+  visibility: visible;
+}
+
+.card-overlay-catagories {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent, black);
+  visibility: hidden;
+}
+
+.noInternet-connection {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.favorite-button {
+  padding: 0.7rem 1rem;
+  border: none;
+  background: rgba(255, 255, 255, 0.377);
+  margin-right: 10px;
+}
+
+.favorite-button.hello {
+  background: #c1fa3b;
+}
