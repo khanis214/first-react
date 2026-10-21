@@ -20,11 +20,11 @@ function App() {
   return (
     <SeeAllDetials>
       <Example>
-        <BrowserRouter>
+        <BrowserRouter basename="/first-react">
           <Navbar />
           <Routes>
             <Route
-              path="first-react/"
+              path="/"
               element={
                 <>
                   <Hero />
